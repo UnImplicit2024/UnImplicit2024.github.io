@@ -83,17 +83,27 @@
       <br/>
       	        <img src="logo.png" alt="logo" style="float:left;width:300px;height:300px;">
 
-      <p>Implicitness and underspecification are ubiquitous in language. Specifically, language utterances may contain <i>empty</i> or <i>fuzzy</i> elements, such as the following: units of measurement, as in <i>she is 30</i> vs. <i>it costs 30</i> (30 what?), bridges and other missing links, as in <i>she tried to enter the car, but the door was stuck</i> (the door of what?), implicit semantic roles, as in <i>I met her while driving (who was driving?)</i>, and various sorts of gradable phenomena; is a <i>small elephant</i> smaller than a <i>big bee</i>? Even though these phenomena may increase the chance of having misunderstandings, our conversational partners often manage to understand our utterances because they consider context-specific elements, such as time, culture, background knowledge and previous utterances in the conversation.</p>
+      <p>Real language is underspecified, vague, and ambiguous. 
+Indeed, past work (Zipf, 1949; Piantadosi, 2012) has suggested that ambiguity may be an inextricable feature of natural language, resulting from competing communicative pressures. 
+Resolving the meaning of language is a never-ending process of making inferences based on implicit knowledge. 
+For example, we know that ``the girl saw the man with the telescope'' is ambiguous and could refer to two situations, while ``the girl saw the man with the hamburger'' is not, or that ``near'' in ``the house near the airport'' and ``the ant near the crumb'' does not refer to the same distance.
+Being able to capture this kind of knowledge is central to building systems with a human-like understanding of language, as well as to providing a full account of natural language itself. </p>
+        <p>While underspecified, ambiguous, and implicit language rarely poses a problem for language speakers, it can challenge even the best models. 
+For example, despite recent major successes in NLP coming from large language models (LLMs), it is not clear that models capture ambiguous language in a human-like fashion (Liu, 2023; Stengel-Eskin, 2023).
+The same has been argued for multimodal NLP. (Pezzelle, 2023), for example, showed that CLIPScore is sensitive to underspecified captions.
+Tackling these kinds of linguistic phenomena represents a new frontier in NLP research, enabled by major progress on more clear-cut tasks. 
+      <p>Past work in underspecified language has tackled several directions.
+Some semantic representations have sought to explicitly represent underspecification (Copestake, 2005; Bos, 2004). </p>
+Other work has begun to recognize that perfect annotator agreement is often unrealistic, especially when using categorical labels for tasks like natural language inference (Chen, 2020; Nie, 2020; Pavlick, 2019). 
+This workshop hopes to attract work embracing disagreement between annotators as a source of signal about underspecification and ambiguity.</p>
+	    
+      <p>In order to resolve the meaning of underspecified and ambiguous language, we often employ additional modalities and information acquired through embodied experience (Bisk, 2020). 
+For example ``the girl saw the man with the telescope'' becomes unambiguous if paired with an image of a man holding a telescope. 
+In contrast, NLP typically considers language in isolation, removed from the context in which it is typically found. 
+This workshop will highlight multimodal inputs, especially visual ones, as sources of information for resolving underspecification. 
+These inputs can themselves pose additional challenges, e.g. through ambiguous images or videos (Bhattacharya, 2019; Sanders, 2022). </p>
 
-        <p>In particular, (implicit) domain restrictions reveal the problem of context dependence of the interpretation of utterances (Stanley and Gendler Szab ́o, 2000). While certain expressions might not be underspecified per se, their interpretation is implicitly restricted by the broader discourse they appear in. This is especially valid for expressions with quantifiers such as <i>every marble is red</i>, which is only true for certain sets of marbles. The problem of underspecified language also extends to pragmatics: Presuppositions or implicatures are by definition not explicitly stated (Stalnaker et al.,1977; Beaver, 1997).  In addition, collaborative games datasets have revealed that speakers often employ underspecified language (Djalali et al., 2012).</p>
-
-      <p>Despite the recent advancements on various semantic tasks, modeling implicitness and underspecification remains a challenging problem in NLP because the elements are not realized on the surface level.  Instead of relying on superficial patterns, models are required to leverage contextual aspects of discourse that go beyond the sentence-level.  Often, there is a lack of available resources to train such models due to the need for human annotation.  Multiple datasets and tasks targeting implicit phenomena have been proposed in recent years, including implicit semantic role labels and event arguments (Gerber and Chai, 2010; Ruppenhofer et al., 2010; Moor et al., 2013; Ebner et al., 2020; Cheng and Erk, 2018,2019), bridging and noun phrase linking (R ̈osiger et al., 2018; Elazar et al., 2021) and other empty elements (Elazar and Goldberg, 2019; McMahan and Stone, 2020). These endeavours were usually narrow in scope and it is still not clear how current models can appropriately model how linguistic meaning is shaped and influenced by context.</p>
-      
-      
-      <p>The first workshop on Implicit and Underspecified Language (held at ACL2021) brought a diverse group of NLP practitioners  and  theoreticians  together  to  address  the  challenges  that  implicit  and  underspecified  language  poses  on NLP. More specifically, the workshop brought to light the wide range of phenomena that fall under that topic and how researchers from different perspectives tackle them.  In addition, the workshop proved that there is a strong interest in implicit and underspecified language within the NLP community.  </p>
-
-      <p>The goal of the third edition of the workshop is to continue eliciting future progress on implicit and underspecified language  with  a  strong  focus  on  the  annotation  and  development  of  aspects  that  go  beyond  the  sentence-level  of  the phenomena.  Similar to the first edition, we would accept theoretical and practical contributions (long, short and non-archival) on all aspects related to the computational modeling (benchmarks, evaluation schemes, annotation, applications)
- of phenomena such as: implicit arguments, fuzzy elements, zero anaphora, metonomy, and discourse markers. In addition,we specifically encourage papers with a strong focus on the interpretation of these elements on the discourse, pragmatic and cognitive levels of language understanding.</p>
+      <p>The goal of the third edition of the workshop is to continue eliciting future progress on processing implicit, underspecified and ambiguous language with a strong focus on annotation ambiguity, multimodality and pragmatics. Similar to the first two editions, we would accept theoretical and practical contributions (long, short and non-archival) on all aspects related to the workshop topic.</p>
 
 	    
       <a name="speakers"></a>
